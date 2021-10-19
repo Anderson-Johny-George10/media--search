@@ -128,7 +128,7 @@ async def filter(client, message):
         if poster:
             await message.reply_photo(photo=poster, caption=f"<b>🎬 Title :- {search}</b>\n<b>🌟 Rating :- 7.5/10 | IMDb</b>\n<b>🎭 Genre :- Action, Drama, Thriller, Entertainment</b>\n<b>💿 Quality :- HDRip</b>\n\n<b>© By @tvseriezzz ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
         else:
-            await message.reply_text(f"<b>🎬 Title :- {search}</b>\n<b>🌟 IMDb Rating :- (7.5/10)</b>\n<b>🎭 Genre :- Action, Drama, Thriller, Entertainment</b>\n\n<b>© By @tvseriezzz ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_text(f"<b>🎬 Title :- {search}</b>\n<b>🌟 IMDb Rating :- (7.5/10)</b>\n<b>🎭 Genre :- Action, Drama, Thriller, Entertainment</b>\n\n<b>© By @FC_Linkz ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
 
 @Client.on_message(filters.text & filters.group & filters.incoming & filters.chat(AUTH_GROUPS) if AUTH_GROUPS else filters.text & filters.group & filters.incoming)
 async def group(client, message):
@@ -155,7 +155,13 @@ async def group(client, message):
                 )
         else:
             await message.reply(quote=True,
-            text=f"""**Sorry, No Movie/Series Related to the Given Word Was Found 🥺**\n\n**Please Go to Google and Confirm the Correct Spelling 🙏**""",
+            text=f"""**👋 𝙃𝙚𝙮 
+
+⚠️  Sorry, No Movie Related to the Given Word Was Found 🥺
+
+✍️Or Your Spelling Is Correct Report To @cg_suggestionbot For Add Requested File 😇
+
+Please Go to Google and Confirm the Correct Spelling 🙏**""",
             reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -313,11 +319,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton("♻️ ⒼⓇⓄⓊⓅ ♻️", url="https://t.me/tvseriezzz"),
-                    InlineKeyboardButton("⭕️ 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ⭕️", url="https://t.me/tvseriezzz_update")
+                    InlineKeyboardButton("♻️ ⒼⓇⓄⓊⓅ ♻️", url="https://t.me/cinemgraamam_requestgroup"),
+                    InlineKeyboardButton("⭕️ 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ⭕️", url="https://t.me/flix_updates")
                 ]
                 ]
-            await query.message.edit(text="<b>Developer : <a href='https://t.me/MrC_VENOM'>MrC《》VENOM</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSupport Group: <a href='https://t.me/tvseriezzz'>Click here</a>\nUpdate Channel : <a href='https://t.me/tvseriezzz_update'>♠️ 𝑨𝒍𝒍 𝑰𝒏 𝑶𝒏𝒆 𝑮𝒓𝒐𝒖𝒑 {Update}</a> </b>\n<b>Click Here For Help 👉 /help</b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text="<b>Developer : <a href='https://t.me/pranthan_321'>MrC《》VENOM</a>\n EDIT: <a href='https//t.me/Anderson_Johny'>Anderson</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSupport Group: <a href='https://t.me/tvseriezzz'>Click here</a>\nUpdate Channel : <a href='https://t.me/tvseriezzz_update'>♠️ 𝑨𝒍𝒍 𝑰𝒏 𝑶𝒏𝒆 𝑮𝒓𝒐𝒖𝒑 {Update}</a> </b>\n<b>Click Here For Help 👉 /help</b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
           
 
 
