@@ -77,7 +77,7 @@ async def start(bot, cmd):
                 buttons = [
                     [
                         InlineKeyboardButton('🔰 GROUP 🔰', url='https://t.me/cinemgraamam_requestgroup'),
-                        InlineKeyboardButton('⭕️OTT UPDATES ⭕️', url='https://t.me/flix_Updates')
+                        InlineKeyboardButton('⭕️ OTT UPDATES ⭕️', url='https://t.me/flix_Updates')
                     ]
                     ]
                 await bot.send_cached_media(
