@@ -7,6 +7,16 @@ from utils import Media, get_file_details
 from pyrogram.errors import UserNotParticipant
 logger = logging.getLogger(__name__)
 
+PHOTO = ["https://telegra.ph/file/82c3c4ab3e50b9f04fe0e.jpg",
+         "https://telegra.ph/file/e59fafff4c958d8be0ef0.jpg",
+         "https://telegra.ph/file/0a703d135b93d12c2a91f.jpg",
+         "https://telegra.ph/file/a07e2db286d7a5d5af1d4.jpg",
+         "https://telegra.ph/file/3b75561bd891cf9421b26.jpg",
+         "https://telegra.ph/file/67f4f2855d614761e7237.jpg",
+         "https://telegra.ph/file/0ae92ec2d4bfa7330f53f.jpg",
+         
+]
+
 @Client.on_message(filters.command("start"))
 async def start(bot, cmd):
     usr_cmdall1 = cmd.text
@@ -92,21 +102,23 @@ async def start(bot, cmd):
             )
         )
     else:
-        await cmd.reply_video(
-            video="https://telegra.ph/file/2451d574ac17276c3a0e6.mp4",
+        await cmd.reply_photo(
+            photo=f"{random.choice(PHOTO)}",
+
             caption=START_MSG,
-            reply_markup=InlineKeyboardMarkup(
+
+           reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("➕️Add Me To Your Chats ➕️", url="https://t.me/tvseriezzz_bot?startgroup=botstart")
+                        InlineKeyboardButton("➕️Add Me To Your Chats ➕️", url="https://t.me/cinegraamam_filterbot?startgroup=botstart")
                     ],
                     [
-                        InlineKeyboardButton("♻️ ⒼⓇⓄⓊⓅ ♻️", url="https://t.me/tvseriezzz"),
-                        InlineKeyboardButton("⭕️ 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ⭕️", url="https://t.me/tvseriezzz_update")
+                        InlineKeyboardButton("♻️ ⒼⓇⓄⓊⓅ ♻️", url="https://t.me/cinemgraamam_requestgroup"),
+                        InlineKeyboardButton("⭕️ 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ⭕️", url="https://t.me/ott_releases_only")
                     ],
                     [
-                        InlineKeyboardButton("♻️ ⒼⓇⓄⓊⓅ 2 ♻️", url="https://t.me/MrCVENOM_chat"),
-                        InlineKeyboardButton("🔥 Dev 🔥", url="https://t.me/MrC_VENOM")
+                        InlineKeyboardButton("♻️ ⒼⓇⓄⓊⓅ 2 ♻️", url="https://t.me/Flix_Updates"),
+                        InlineKeyboardButton("SEARCH HERE",switch_inline_query_current_chat='')
                     ],
                     [
                         InlineKeyboardButton("𝙰𝚋𝚘𝚞𝚝 🚩", callback_data="about")
