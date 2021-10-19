@@ -76,7 +76,7 @@ async def start(bot, cmd):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🔰 NEW RELEASE 🔰', url='https://t.me/ott_releases_only'),
+                        InlineKeyboardButton('🔰 GROUP 🔰', url='https://t.me/cinemgraamam_requestgroup'),
                         InlineKeyboardButton('⭕️OTT UPDATES ⭕️', url='https://t.me/flix_Updates')
                     ]
                     ]
